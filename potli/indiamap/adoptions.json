@@ -1,0 +1,58 @@
+{
+	"name": "states",
+	"values": [{
+		"name": "Odisha",
+		"year": 2004
+	}, {
+		"name": "Tripura",
+		"year": 2005
+	}, {
+		"name": "Uttar Pradesh",
+		"year": 2005
+	}, {
+		"name": "Karnataka",
+		"year": 2006
+	}, {
+		"name": "Gujarat",
+		"year": 2006
+	}, {
+		"name": "Madhya Pradesh",
+		"year": 2007
+	}, {
+		"name": "Jammu & Kashmir",
+		"year": 2007
+	}, {
+		"name": "Arunachal Pradesh",
+		"year": 2007
+	}, {
+		"name": "Chhattisgarh",
+		"year": 2007
+	}, {
+		"name": "Uttarakhand",
+		"year": 2007
+	}, {
+		"name": "Himachal Pradesh",
+		"year": 2008
+	}, {
+		"name": "Bihar",
+		"year": 2008
+	}, {
+		"name": "Kerala",
+		"year": 2008
+	}, {
+		"name": "Nagaland",
+		"year": 2009
+	}, {
+		"name": "Dadra and Nagar Haveli",
+		"year": 2011
+	}, {
+		"name": "Rajasthan",
+		"year": 2011
+	}, {
+		"name": "Andaman & Nicobar Islands",
+		"year": 2012
+	}, {
+		"name": "Maharashtra",
+		"year": 2013
+	}]
+}
