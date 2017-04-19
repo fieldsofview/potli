@@ -55,7 +55,7 @@ ROOT_URLCONF = 'potli.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(os.path.dirname(__file__), 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,9 +126,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-BOOTSTRAP3 = {
-    'set_required': False,  # For Django <= 1.8 only
-    'error_css_class': 'bootstrap3-error',
-    'required_css_class': 'bootstrap3-required',
-    'javascript_in_head': True,
-}
+STATIC_ROOT = os.path.join(BASE_DIR, "/static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "/media")
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]

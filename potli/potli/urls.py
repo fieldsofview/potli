@@ -16,10 +16,19 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
-    url(r'^instatus/', include('instatus.urls')),
-    url(r'^gbfannotate/', include('gbfannotate.urls')),
+    url(r'^indiamap/', include('potli.indiamap.urls')),
+    url(r'^instatus/', include('potli.instatus.urls')),
+    url(r'^gbfannotate/', include('potli.gbfannotate.urls')),
     url(r'^admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+print (settings.STATIC_URL)
+print (settings.STATIC_ROOT)
